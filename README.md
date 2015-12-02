@@ -26,3 +26,5 @@ Write functions that accomplish the following tasks:
 4. Write a function that takes a number and returns an array of its digits as numbers between 0-9. For instance, 12045 would result in `@[ @1, @2, @0, @4, @5 ]`.
 
 5. Write function that reverses an array. Now do it in-place: that is, without allocating a separate array.
+
+<a href='https://learn.co/lessons/ios-collections-and-strings-problems' data-visibility='hidden'>View this lesson on Learn.co</a>
