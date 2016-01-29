@@ -27,4 +27,4 @@ Write functions that accomplish the following tasks:
 
 5. Write function that reverses an array. Now do it in-place: that is, without allocating a separate array.
 
-<a href='https://learn.co/lessons/ios-collections-and-strings-problems' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ios-collections-and-strings-problems' title='Collections and Strings Problems'>Collections and Strings Problems</a> on Learn.co and start learning to code for free.</p>
