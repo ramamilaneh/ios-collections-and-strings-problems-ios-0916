@@ -10,21 +10,10 @@
 		0789857865B4D24D0B32EFC5 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B523025CE7B6687D214CB7 /* FISAppDelegate.m */; };
 		28A9785A03C375671CF3096F /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = 76E6BE0B04E13C96AE18D7E6 /* LaunchScreen.xib */; };
 		6A35CDA73498A5205687F20A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E91A786DA2218063361B713 /* Foundation.framework */; };
-		7CCEBA68207A8F8CA0D3025C /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5F3D872064AC86D1A5CDD9 /* libPods-unit_tests.a */; };
 		915F8BBBB731E6D8178E0308 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE580214B86D58CA0255F54 /* main.m */; };
 		BC4E8D02A97AE314E3C29F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0865F970058F19CBDE0DE7 /* Main.storyboard */; };
 		F0007968464D04C37286CF57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022A997D110D4229F652CAA5 /* Images.xcassets */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4E860D98C5133E570C8CDF45 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D70442A8ECB6EDF1CA68DD7D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E7397C123F5706AC3A5FF9E2;
-			remoteInfo = "ios-collections-and-strings-problems";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		022A997D110D4229F652CAA5 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -37,7 +26,6 @@
 		76E6BE0B04E13C96AE18D7E6 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		7A563C472D9C431ECC6DAA3C /* ios-collections-and-strings-problems-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ios-collections-and-strings-problems-Prefix.pch"; sourceTree = "<group>"; };
 		8C8BA4BDFD1F5D586FA9E961 /* Pods-unit_tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.release.xcconfig"; sourceTree = "<group>"; };
-		904485A0263480492C985504 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		929340903897DEAF143CE66D /* ios-collections-and-strings-problems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-collections-and-strings-problems.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE580214B86D58CA0255F54 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A25611638F2011760C5180B6 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -51,14 +39,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A35CDA73498A5205687F20A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7ED97CC030F56AB7744CA1BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CCEBA68207A8F8CA0D3025C /* libPods-unit_tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				929340903897DEAF143CE66D /* ios-collections-and-strings-problems.app */,
-				904485A0263480492C985504 /* UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,26 +152,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		19D331785B4C2D1E77BEF674 /* UnitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3EE9F4A230C00EC0E4BF6254 /* Build configuration list for PBXNativeTarget "UnitTests" */;
-			buildPhases = (
-				9BA7C36638E97D8D294AB0BE /* Check Pods Manifest.lock */,
-				2F9CCD39F8874CF533FA4BAB /* Sources */,
-				7ED97CC030F56AB7744CA1BF /* Frameworks */,
-				1569A0165CCF1913D5284F89 /* Resources */,
-				4C8974D3EF1ADBC369AB1D0B /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0C59FFF7B48B4B1817FA851F /* PBXTargetDependency */,
-			);
-			name = UnitTests;
-			productName = UnitTests;
-			productReference = 904485A0263480492C985504 /* UnitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		E7397C123F5706AC3A5FF9E2 /* ios-collections-and-strings-problems */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4456BCB9BFCA07CEC483D610 /* Build configuration list for PBXNativeTarget "ios-collections-and-strings-problems" */;
@@ -233,19 +192,11 @@
 			projectRoot = "";
 			targets = (
 				E7397C123F5706AC3A5FF9E2 /* ios-collections-and-strings-problems */,
-				19D331785B4C2D1E77BEF674 /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1569A0165CCF1913D5284F89 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C334FB871811629EB8DE3DD2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,47 +208,7 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4C8974D3EF1ADBC369AB1D0B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9BA7C36638E97D8D294AB0BE /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		2F9CCD39F8874CF533FA4BAB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7E0B3F747F71DC16AA1340AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,14 +220,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0C59FFF7B48B4B1817FA851F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E7397C123F5706AC3A5FF9E2 /* ios-collections-and-strings-problems */;
-			targetProxy = 4E860D98C5133E570C8CDF45 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		047189E14A3E59C64EAEEAC8 /* Debug */ = {
@@ -426,48 +329,6 @@
 			};
 			name = Release;
 		};
-		D0764AB2070B1F742D55BEDB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C7C3828E89DF44A38A2E07A /* Pods-unit_tests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ios-collections-and-strings-problems.app/ios-collections-and-strings-problems";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
-				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		E7AB213F92CEE2083A2ACBD8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C8BA4BDFD1F5D586FA9E961 /* Pods-unit_tests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ios-collections-and-strings-problems.app/ios-collections-and-strings-problems";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
-				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		FACE31C4F088D71FF8AA37CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -519,15 +380,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3EE9F4A230C00EC0E4BF6254 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7AB213F92CEE2083A2ACBD8 /* Release */,
-				D0764AB2070B1F742D55BEDB /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4456BCB9BFCA07CEC483D610 /* Build configuration list for PBXNativeTarget "ios-collections-and-strings-problems" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
