@@ -9,5 +9,5 @@
 -(void)printInRectangularFrame:(NSArray *)words;
 -(NSString *)translatedToPigLatin:(NSString *)string;
 -(NSString *)translatedFromPigLatin:(NSString *)string;
-
+-(NSArray *)combineTwoArrays:(NSArray *)first second:(NSArray *)second;
 @end

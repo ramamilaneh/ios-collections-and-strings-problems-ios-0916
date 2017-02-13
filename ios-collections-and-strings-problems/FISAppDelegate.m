@@ -8,8 +8,9 @@
     // Override point for customization after application launch.
     [self printInRectangularFrame:@[@"in",@"Hello", @"a", @"frame",@"World"]];
     NSString *new = [self translatedToPigLatin:@"The quick brown fox"];
-    [self translatedFromPigLatin:@"Hetay uickqay rownbay oxfay"];
     NSLog(@"%@",new);
+    [self translatedFromPigLatin:@"Hetay uickqay rownbay oxfay"];
+    [self combineTwoArrays:@[@"a", @"b",@"c"] second:@[@"1",@"2"]];
     return YES;
 }
 
@@ -80,9 +81,23 @@
     }
     NSLog(@"%@",[words componentsJoinedByString:@" "]);
     return [words componentsJoinedByString:@" "];
-
-    
 }
-    
+
+-(NSArray *)combineTwoArrays:(NSArray *)first second:(NSArray *)second {
+    NSMutableArray *result = [NSMutableArray array];
+    for(NSUInteger i = 0; i<MAX(first.count, second.count); i++) {
+        if (i>=first.count) {
+            [result addObject:second[i]];
+        }else if(i>=second.count){
+            [result addObject:first[i]];
+        }else{
+            [result addObject:first[i]];
+            [result addObject:second[i]];
+        }
+    }
+    NSLog(@"%@",result);
+    return result;
+}
+
 
 @end
