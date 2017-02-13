@@ -11,6 +11,7 @@
     NSLog(@"%@",new);
     [self translatedFromPigLatin:@"Hetay uickqay rownbay oxfay"];
     [self combineTwoArrays:@[@"a", @"b",@"c"] second:@[@"1",@"2"]];
+    [self getNumberDigits:12405];
     return YES;
 }
 
@@ -98,6 +99,21 @@
     NSLog(@"%@",result);
     return result;
 }
+
+-(NSArray *)getNumberDigits:(NSInteger)number {
+    NSMutableArray *digits = [NSMutableArray array];
+    NSInteger result = number;
+    NSUInteger length = (NSUInteger) ceil(log10(number));
+    for (NSUInteger i=0; i<length; i++) {
+        int divider = pow(10.0,length - i - 1);
+        NSInteger digit = result/divider;
+        result = result%(divider);
+        [digits addObject:@(digit)];
+    }
+    NSLog(@"%@",digits);
+    return digits;
+}
+
 
 
 @end

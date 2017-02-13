@@ -10,4 +10,6 @@
 -(NSString *)translatedToPigLatin:(NSString *)string;
 -(NSString *)translatedFromPigLatin:(NSString *)string;
 -(NSArray *)combineTwoArrays:(NSArray *)first second:(NSArray *)second;
+-(NSArray *)getNumberDigits:(NSInteger)number;
+
 @end
