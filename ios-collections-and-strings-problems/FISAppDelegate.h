@@ -7,4 +7,7 @@
 @property (strong, nonatomic) UIWindow *window;
 
 -(void)printInRectangularFrame:(NSArray *)words;
+-(NSString *)translatedToPigLatin:(NSString *)string;
+-(NSString *)translatedFromPigLatin:(NSString *)string;
+
 @end

@@ -7,6 +7,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self printInRectangularFrame:@[@"in",@"Hello", @"a", @"frame",@"World"]];
+    NSString *new = [self translatedToPigLatin:@"The quick brown fox"];
+    [self translatedFromPigLatin:@"Hetay uickqay rownbay oxfay"];
+    NSLog(@"%@",new);
     return YES;
 }
 
@@ -39,5 +42,47 @@
     printf("%s \n","");
 
 }
+
+-(NSString *)translatedToPigLatin:(NSString *)string {
+    NSString *suffix = @"ay";
+    NSMutableArray *words = [NSMutableArray arrayWithArray:[string componentsSeparatedByString:@" "]];
+    NSString *word, *pigLatin, *character;
+    for (NSUInteger i = 0; i < words.count; i++) {
+        pigLatin = @"";
+        word = [words objectAtIndex:i];
+        for (NSUInteger j = 0; j < word.length; j++) {
+            character = [NSString stringWithFormat:@"%c", [word characterAtIndex:((j+1)%word.length)]];
+            if ([[NSCharacterSet uppercaseLetterCharacterSet] characterIsMember:[word characterAtIndex:j]]) character = character.uppercaseString;
+            else character = character.lowercaseString;
+            pigLatin = [pigLatin stringByAppendingString:character];
+        }
+        [words replaceObjectAtIndex:i withObject:[pigLatin stringByAppendingString:suffix]];
+    }
+    return [words componentsJoinedByString:@" "];
+
+}
+
+-(NSString *)translatedFromPigLatin:(NSString *)string {
+    NSString *suffix = @"ay";
+    NSMutableArray *words = [NSMutableArray arrayWithArray:[string componentsSeparatedByString:@" "]];
+    NSString *word, *english, *character;
+    for (NSUInteger i = 0; i < words.count; i++) {
+        english = @"";
+        word = [words objectAtIndex:i];
+        word = [word substringToIndex:word.length-suffix.length];
+        for (NSUInteger j = 0; j < word.length; j++) {
+            character = [NSString stringWithFormat:@"%c", [word characterAtIndex:((j+word.length-1)%word.length)]];
+            if ([[NSCharacterSet uppercaseLetterCharacterSet] characterIsMember:[word characterAtIndex:j]]) character = character.uppercaseString;
+            else character = character.lowercaseString;
+            english = [english stringByAppendingString:character];
+        }
+        [words replaceObjectAtIndex:i withObject:english];
+    }
+    NSLog(@"%@",[words componentsJoinedByString:@" "]);
+    return [words componentsJoinedByString:@" "];
+
+    
+}
+    
 
 @end
